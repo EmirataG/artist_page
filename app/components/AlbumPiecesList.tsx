@@ -1,16 +1,16 @@
-import type { Piece } from "@/data";
+import type { Album } from "@/data";
 
-const AlbumPiecesList = ({ pieces }: { pieces: Piece[] }) => {
+const AlbumPiecesList = ({ album }: { album: Album }) => {
   return (
-    <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg h-full w-80 shadow-inner">
+    <div className="bg-gray-800 p-4 rounded-lg h-full w-64 shadow-inner">
       <h4 className="font-bold text-lg mb-3 text-gray-800 dark:text-gray-200">
         Tracklist
       </h4>
       <ul className="space-y-4">
-        {pieces.map((piece, index) => (
+        {album.tracks.map((piece, index) => (
           <li
             key={index}
-            className="text-gray-600 dark:text-gray-400 truncate border-b-1 hover:text-white hover:border-white transition-all duration-200"
+            className="text-gray-600 dark:text-gray-400 truncate hover:text-white hover:border-white transition-all duration-200"
           >
             {index + 1}. {piece.title}
           </li>

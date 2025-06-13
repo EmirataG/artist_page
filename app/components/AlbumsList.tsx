@@ -1,18 +1,34 @@
 import { albums } from "@/data";
-
+import { mockWorks } from "@/data";
 import AlbumListEntry from "./AlbumListEntry";
+import MockWork from "./MockWork";
 
 const AlbumsList = () => {
   return (
-    <div className="items-center p-4">
+    <div className="items-center">
       <div className="flex items-center">
         <div className="flex-grow border-t border-gray-300"></div>
         <h3 className="mx-4 text-center text-xl font-semibold">Albums</h3>
         <div className="flex-grow border-t border-gray-300"></div>
       </div>
-      <div className="flex flex-wrap gap-4 p-4">
+      {/* This container now correctly handles scrolling.
+        - `sm:flex-row` keeps your responsive design for wider screens.
+        - `overflow-x-auto` enables horizontal scrolling when needed.
+      */}
+      <div className="flex sm:flex-row flex-col items-center gap-4 py-4 overflow-x-auto">
         {albums.map((album, index) => (
-          <AlbumListEntry key={index} album={album} />
+          // This wrapper div with `flex-shrink-0` is the key.
+          // It prevents the AlbumListEntry from being squished by the flex container.
+          <div key={index} className="flex-shrink-0">
+            <AlbumListEntry album={album} />
+          </div>
+        ))}
+        {mockWorks.map((work, index) => (
+          // This wrapper div with `flex-shrink-0` is the key.
+          // It prevents the AlbumListEntry from being squished by the flex container.
+          <div key={index} className="flex-shrink-0">
+            <MockWork mockWork={work} />
+          </div>
         ))}
       </div>
     </div>

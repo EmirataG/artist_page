@@ -16,8 +16,10 @@ const AlbumListEntry = ({ album }: { album: Album }) => {
     <article className="flex">
       <div className="flex flex-col gap-2">
         <Image
-          className="size-80 rounded-md select-none hover:scale-101 duration-300 active:scale-99"
-          src={album.albumCover}
+          className="rounded-md select-none hover:scale-101 duration-300 active:scale-99"
+          width={288}
+          height={288}
+          src={album.artwork}
           objectFit="cover"
           alt={`cover art for the ${album.title} album`}
         />
@@ -55,7 +57,7 @@ const AlbumListEntry = ({ album }: { album: Album }) => {
           - The content inside this div will define the final width of the `1fr` column.
         */}
         <div className="overflow-hidden">
-          <AlbumPiecesList pieces={album.tracks} />
+          <AlbumPiecesList album={album} />
         </div>
       </div>
     </article>

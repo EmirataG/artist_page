@@ -6,7 +6,7 @@ const SinglesListEntry = ({ piece }: { piece: Piece }) => {
   return (
     <article className="flex flex-col gap-2">
       <Image
-        className="size-80 rounded-md select-none hover:scale-101 duration-300 active:scale-99"
+        className="size-72 rounded-md select-none hover:scale-101 duration-300 active:scale-99"
         src={piece.artwork!}
         objectFit="cover"
         alt={`cover art for ${piece.title}`}

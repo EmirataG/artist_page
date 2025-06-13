@@ -7,8 +7,14 @@ import stargazeArt from "@/public/images/Stargaze.jpeg";
 export interface Album {
   title: string;
   numOfTracks: number;
-  albumCover: StaticImageData;
+  artwork: StaticImageData;
   tracks: Piece[];
+}
+
+export interface MockWork {
+  title: string;
+  numOfTracks: number | string;
+  artworkText: string;
 }
 
 export interface Piece {
@@ -20,7 +26,7 @@ export const albums: Album[] = [
   {
     title: "Waltzes for Quiet Hours",
     numOfTracks: 3,
-    albumCover: waltzesForQuietHoursArt,
+    artwork: waltzesForQuietHoursArt,
     tracks: [
       { title: "The Bottom Drawer", artwork: null },
       { title: "Mismatched Socks", artwork: null },
@@ -30,7 +36,7 @@ export const albums: Album[] = [
   {
     title: "Thoughtdrifts",
     numOfTracks: 3,
-    albumCover: thoughtdriftsArt,
+    artwork: thoughtdriftsArt,
     tracks: [
       { title: "Darkness & Fireflies", artwork: null },
       { title: "Moonlight & Snow", artwork: null },
@@ -40,3 +46,26 @@ export const albums: Album[] = [
 ];
 
 export const singles: Piece[] = [{ title: "Stargaze", artwork: stargazeArt }];
+
+export const mockWorks: MockWork[] = [
+  {
+    title: "Writing music takes time...",
+    numOfTracks: "???",
+    artworkText: "More Coming",
+  },
+  {
+    title: "Working on some pieces...",
+    numOfTracks: "???",
+    artworkText: "I promise 🙏",
+  },
+  {
+    title: "Stay tuned!",
+    numOfTracks: "???",
+    artworkText: "I just need some time! 🦖",
+  },
+];
+
+export const bio: string =
+  "Hey! A selft-thaught pianist composer and pianist here.";
+
+export const releaseToBeAnounced: Album = albums[0];
