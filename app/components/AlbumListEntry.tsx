@@ -30,14 +30,14 @@ const AlbumListEntry = ({ album }: { album: Album }) => {
           </div>
           {tracksShown ? (
             <IoIosArrowDropleft
-              className="size-7 hover:scale-105 active:scale-97 duration-300"
+              className="size-7 hover:scale-105 active:scale-97 duration-300 cursor-pointer"
               onClick={() =>
                 setTracksShown((prevTracksShown) => !prevTracksShown)
               }
             />
           ) : (
             <IoIosArrowDropright
-              className="size-7 hover:scale-105 active:scale-97 duration-300"
+              className="size-7 hover:scale-105 active:scale-97 duration-300 cursor-pointer"
               onClick={() =>
                 setTracksShown((prevTracksShown) => !prevTracksShown)
               }

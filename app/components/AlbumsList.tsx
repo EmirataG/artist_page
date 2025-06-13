@@ -26,7 +26,7 @@ const AlbumsList = () => {
         {mockWorks.map((work, index) => (
           // This wrapper div with `flex-shrink-0` is the key.
           // It prevents the AlbumListEntry from being squished by the flex container.
-          <div key={index} className="flex-shrink-0">
+          <div key={index} className="flex-shrink-0 hidden sm:block">
             <MockWork mockWork={work} />
           </div>
         ))}

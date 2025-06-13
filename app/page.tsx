@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-col gap-4 p-5">
       <Header />
       <Anouncement work={releaseToBeAnounced} />
-      <h2>My other works. More is coming ...</h2>
+      <h2>My other works.</h2>
       <AlbumsList />
       <SinglesList />
       <Footer />

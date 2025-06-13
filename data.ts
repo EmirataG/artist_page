@@ -9,6 +9,7 @@ export interface Album {
   numOfTracks: number;
   artwork: StaticImageData;
   tracks: Piece[];
+  description: string;
 }
 
 export interface MockWork {
@@ -32,6 +33,8 @@ export const albums: Album[] = [
       { title: "Mismatched Socks", artwork: null },
       { title: "Loose Floorboards", artwork: null },
     ],
+    description:
+      "A collection of 3 gentle watzes that for some reason remind me of random things that I did in my childhood.",
   },
   {
     title: "Thoughtdrifts",
@@ -42,6 +45,7 @@ export const albums: Album[] = [
       { title: "Moonlight & Snow", artwork: null },
       { title: "Shining & Clouds", artwork: null },
     ],
+    description: "hey",
   },
 ];
 
@@ -66,6 +70,6 @@ export const mockWorks: MockWork[] = [
 ];
 
 export const bio: string =
-  "Hey! A selft-thaught pianist composer and pianist here.";
+  "Hey! I think that music says nothing but tells everyone something different. I hope my pieces tell you something... 🌽";
 
 export const releaseToBeAnounced: Album = albums[0];
