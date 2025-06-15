@@ -13,7 +13,7 @@ const AlbumListEntry = ({ album }: { album: Album }) => {
   const [tracksShown, setTracksShown] = useState<boolean>(false);
 
   return (
-    <article className="flex">
+    <article className="flex overflow-scroll">
       <div className="flex flex-col gap-2">
         <Image
           className="rounded-md select-none hover:scale-101 duration-300 active:scale-99"
@@ -56,7 +56,7 @@ const AlbumListEntry = ({ album }: { album: Album }) => {
           - `overflow-hidden`: Prevents content from spilling out or being visible during the transition.
           - The content inside this div will define the final width of the `1fr` column.
         */}
-        <div className="overflow-hidden">
+        <div className="overflow-scroll">
           <AlbumPiecesList album={album} />
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { FaSpotify } from "react-icons/fa";
-import { SiTidal } from "react-icons/si";
+import { SiApplemusic } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
@@ -21,7 +21,7 @@ const Header = () => {
           href="https://open.spotify.com/artist/6nr7knPIeK4euzFLEjDOWp"
         />
         <LinkIcon
-          icon={SiTidal}
+          icon={SiApplemusic}
           href="https://open.spotify.com/artist/6nr7knPIeK4euzFLEjDOWp"
         />
         <LinkIcon
@@ -30,7 +30,7 @@ const Header = () => {
         />
         <LinkIcon
           icon={FaYoutube}
-          href="https://open.spotify.com/artist/6nr7knPIeK4euzFLEjDOWp"
+          href="https://www.youtube.com/channel/UCa6VqM6tg0ydyMpnO1zr7DA"
         />
       </div>
     </header>

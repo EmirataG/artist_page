@@ -21,6 +21,7 @@ export interface MockWork {
 export interface Piece {
   title: string;
   artwork: StaticImageData | null;
+  audioSrc: string | null;
 }
 
 export const albums: Album[] = [
@@ -29,9 +30,21 @@ export const albums: Album[] = [
     numOfTracks: 3,
     artwork: waltzesForQuietHoursArt,
     tracks: [
-      { title: "The Bottom Drawer", artwork: null },
-      { title: "Mismatched Socks", artwork: null },
-      { title: "Loose Floorboards", artwork: null },
+      {
+        title: "The Bottom Drawer",
+        artwork: null,
+        audioSrc: "bottom_drawer.mp3",
+      },
+      {
+        title: "Mismatched Socks",
+        artwork: null,
+        audioSrc: "mismatched_socks.mp3",
+      },
+      {
+        title: "Loose Floorboards",
+        artwork: null,
+        audioSrc: "loose_floorboards.mp3",
+      },
     ],
     description:
       "A collection of 3 gentle watzes that for some reason remind me of random things that I did in my childhood.",
@@ -41,15 +54,17 @@ export const albums: Album[] = [
     numOfTracks: 3,
     artwork: thoughtdriftsArt,
     tracks: [
-      { title: "Darkness & Fireflies", artwork: null },
-      { title: "Moonlight & Snow", artwork: null },
-      { title: "Shining & Clouds", artwork: null },
+      { title: "Darkness & Fireflies", artwork: null, audioSrc: null },
+      { title: "Moonlight & Snow", artwork: null, audioSrc: null },
+      { title: "Shining & Clouds", artwork: null, audioSrc: null },
     ],
     description: "hey",
   },
 ];
 
-export const singles: Piece[] = [{ title: "Stargaze", artwork: stargazeArt }];
+export const singles: Piece[] = [
+  { title: "Stargaze", artwork: stargazeArt, audioSrc: null },
+];
 
 export const mockWorks: MockWork[] = [
   {

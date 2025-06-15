@@ -8,7 +8,9 @@ const AlbumsList = () => {
     <div className="items-center">
       <div className="flex items-center">
         <div className="flex-grow border-t border-gray-300"></div>
-        <h3 className="mx-4 text-center text-xl font-semibold">Albums</h3>
+        <h3 className="mx-4 text-center text-xl font-semibold">
+          Albums and EPs
+        </h3>
         <div className="flex-grow border-t border-gray-300"></div>
       </div>
       {/* This container now correctly handles scrolling.

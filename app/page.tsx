@@ -11,7 +11,9 @@ export default function Home() {
     <div className="flex flex-col gap-4 p-5">
       <Header />
       <Anouncement work={releaseToBeAnounced} />
-      <h2 className="text-center text-2xl font-semibold">All Stuff by Me:</h2>
+      <h2 className="text-center text-2xl font-semibold mt-2">
+        All Stuff by Me:
+      </h2>
       <AlbumsList />
       <SinglesList />
       <Footer />
