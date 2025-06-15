@@ -66,18 +66,20 @@ const Anouncement = ({ work }: { work: Album | Piece }) => {
   };
 
   return (
-    <div className="rounded-md bg-gray-900 sm:items-stretch  flex flex-col sm:flex-row justify-between hover:scale-101 duration-300">
+    <div className="rounded-md bg-gray-900 sm:items-center flex flex-col sm:flex-row justify-between hover:scale-101 duration-300">
       <div className="p-4 text-center grow-1 sm:hidden">
         <h2 className="text-3xl font-bold">{`${work.title}`}</h2>
         <h4 className="text-xl">{"Is out now!!!"}</h4>
       </div>
       <div className="flex overflow-scroll">
-        <Image
-          src={work.artwork!}
-          objectFit="cover"
-          alt={`cover art for ${work.title}`}
-          className="size-96 sm:size-96 rounded-l-md"
-        />
+        <div className="shrink-0">
+          <Image
+            src={work.artwork!}
+            style={{ objectFit: "cover" }}
+            alt={`cover art for ${work.title}`}
+            className="size-96 sm:size-96 rounded-l-md"
+          />
+        </div>
         <Vinyl
           key={vinylPiece.audioSrc}
           piece={vinylPiece}
