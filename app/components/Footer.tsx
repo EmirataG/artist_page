@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Call to Action Heading */}
           <div className="max-w-80">
             <h2 className="font-extrabold text-amber-50 text-2xl">
-              Let's Connect
+              {"Let's Connect"}
             </h2>
 
             {/* Description */}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SinglesListEntry from "./SinglesListEntry";
 import MockWork from "./MockWork";
 
