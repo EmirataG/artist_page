@@ -83,7 +83,7 @@ const Vinyl = ({
   `;
 
   return (
-    <div className="bg-[#c2a293] p-4 sm:rounded-r-md flex flex-col items-center gap-4 justify-around">
+    <div className="bg-[#c2a293] p-4 flex flex-row sm:flex-col items-center gap-4 justify-around rounded-b-md sm:rounded-r-md sm:rounded-l-none">
       {piece.audioSrc && (
         <audio ref={audioRef} src={`/music/${piece.audioSrc}`} preload="auto" />
       )}
@@ -172,14 +172,12 @@ const Vinyl = ({
         {isPlaying ? (
           <FaPause
             color="black"
-            size={32}
-            className="hover:scale-105 active:scale-95 duration-300"
+            className="size-12 hover:scale-105 active:scale-95 duration-300"
           />
         ) : (
           <FaPlay
             color="black"
-            size={32}
-            className="hover:scale-105 active:scale-95 duration-300"
+            className="size-12 hover:scale-105 active:scale-95 duration-300"
           />
         )}
       </button>

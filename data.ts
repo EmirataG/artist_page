@@ -10,6 +10,11 @@ export interface Album {
   artwork: StaticImageData;
   tracks: Piece[];
   description: string;
+  links: {
+    spotify: string | null;
+    appleMusic: string | null;
+    youtube: string | null;
+  };
 }
 
 export interface MockWork {
@@ -22,6 +27,11 @@ export interface Piece {
   title: string;
   artwork: StaticImageData | null;
   audioSrc: string | null;
+  links: {
+    spotify: string | null;
+    appleMusic: string | null;
+    youtube: string | null;
+  } | null;
 }
 
 export const albums: Album[] = [
@@ -34,36 +44,70 @@ export const albums: Album[] = [
         title: "The Bottom Drawer",
         artwork: null,
         audioSrc: "bottom_drawer.mp3",
+        links: null,
       },
       {
         title: "Mismatched Socks",
         artwork: null,
         audioSrc: "mismatched_socks.mp3",
+        links: null,
       },
       {
         title: "Loose Floorboards",
         artwork: null,
         audioSrc: "loose_floorboards.mp3",
+        links: null,
       },
     ],
     description:
-      "A collection of 3 gentle watzes that for some reason remind me of random things that I did in my childhood.",
+      "A collection of three gentle waltzes, inspired by the fleeting and whimsical memories of childhood. They are intended as a gentle companion for solitude in the quiet hours of the day or night.",
+    links: {
+      spotify: "https://open.spotify.com/album/2a2xsWfDCamRlsy5i8kTZ7",
+      youtube:
+        "https://www.youtube.com/playlist?list=OLAK5uy_m3F5W2Qzyu11_G1_UZuziQTBSJDjgx5OQ",
+      appleMusic:
+        "https://music.apple.com/us/album/thoughtdrifts-single/1763280872",
+    },
   },
   {
     title: "Thoughtdrifts",
     numOfTracks: 3,
     artwork: thoughtdriftsArt,
     tracks: [
-      { title: "Darkness & Fireflies", artwork: null, audioSrc: null },
-      { title: "Moonlight & Snow", artwork: null, audioSrc: null },
-      { title: "Shining & Clouds", artwork: null, audioSrc: null },
+      {
+        title: "Darkness & Fireflies",
+        artwork: null,
+        audioSrc: null,
+        links: null,
+      },
+      { title: "Moonlight & Snow", artwork: null, audioSrc: null, links: null },
+      { title: "Shining & Clouds", artwork: null, audioSrc: null, links: null },
     ],
-    description: "hey",
+    links: {
+      spotify: "https://open.spotify.com/album/2a2xsWfDCamRlsy5i8kTZ7",
+      youtube:
+        "https://www.youtube.com/playlist?list=OLAK5uy_m3F5W2Qzyu11_G1_UZuziQTBSJDjgx5OQ",
+      appleMusic:
+        "https://music.apple.com/us/album/thoughtdrifts-single/1763280872",
+    },
+    description:
+      "I've put together three meditative piano pieces that try to capture the feeling of being in nature. I had my own scenes in mind, but I'm more interested in what you see. Don't worry about the titles—just press play and let the music create its own imagery for you.",
   },
 ];
 
 export const singles: Piece[] = [
-  { title: "Stargaze", artwork: stargazeArt, audioSrc: null },
+  {
+    title: "Stargaze",
+    artwork: stargazeArt,
+    audioSrc: null,
+    links: {
+      spotify: "https://open.spotify.com/album/2a2xsWfDCamRlsy5i8kTZ7",
+      youtube:
+        "https://www.youtube.com/playlist?list=OLAK5uy_m3F5W2Qzyu11_G1_UZuziQTBSJDjgx5OQ",
+      appleMusic:
+        "https://music.apple.com/us/album/thoughtdrifts-single/1763280872",
+    },
+  },
 ];
 
 export const mockWorks: MockWork[] = [
@@ -85,6 +129,6 @@ export const mockWorks: MockWork[] = [
 ];
 
 export const bio: string =
-  "Hey! I think that music says nothing but tells everyone something different. I hope my pieces tell you something... 🌽";
+  "Hello there! I think that music says nothing but tells everyone something different.🤔 I hope my music tells you something... 🌽";
 
 export const releaseToBeAnounced: Album = albums[0];

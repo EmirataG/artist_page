@@ -2,10 +2,10 @@ import type { Album } from "@/data";
 
 const AlbumPiecesList = ({ album }: { album: Album }) => {
   return (
-    <div className="flex flex-col gap-4 bg-gray-800 p-4 rounded-lg h-full w-64 shadow-inner">
+    <div className="flex flex-col gap-4 bg-gray-800 p-4 rounded-lg w-64 shadow-inner h-86">
       <h4 className="font-bold text-lg text-gray-200">Tracklist</h4>
-      <div className="max-h-40 pb-4 overflow-scroll border-b border-white">
-        <ul className="space-y-2">
+      <div className="min-h-24 max-h-40 h-fit pb-4 border-b border-white shrink-0">
+        <ul className="space-y-2 overflow-scroll">
           {album.tracks.map((piece, index) => (
             <li
               key={index}
@@ -16,7 +16,7 @@ const AlbumPiecesList = ({ album }: { album: Album }) => {
           ))}
         </ul>
       </div>
-      <div className="text-gray-400 text-justify">
+      <div className="text-gray-400 text-justify overflow-scroll">
         <span>{album.description}</span>
       </div>
     </div>

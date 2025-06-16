@@ -17,7 +17,8 @@ const AlbumsList = () => {
         - `sm:flex-row` keeps your responsive design for wider screens.
         - `overflow-x-auto` enables horizontal scrolling when needed.
       */}
-      <div className="flex sm:flex-row flex-col items-center gap-4 py-4 overflow-x-auto">
+      {/* <div className="flex sm:flex-row flex-col items-center gap-4 py-4 overflow-x-auto"> */}
+      <div className="flex flex-row items-center gap-4 py-4 overflow-x-auto">
         {albums.map((album, index) => (
           // This wrapper div with `flex-shrink-0` is the key.
           // It prevents the AlbumListEntry from being squished by the flex container.
@@ -28,7 +29,7 @@ const AlbumsList = () => {
         {mockWorks.map((work, index) => (
           // This wrapper div with `flex-shrink-0` is the key.
           // It prevents the AlbumListEntry from being squished by the flex container.
-          <div key={index} className="flex-shrink-0 hidden sm:block">
+          <div key={index} className="flex-shrink-0">
             <MockWork mockWork={work} />
           </div>
         ))}
