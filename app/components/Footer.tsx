@@ -23,20 +23,21 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col text-center sm:flex-row sm:gap-6 items-center sm:justify-center">
           {/* Call to Action Heading */}
-          <div className="max-w-80">
+          <div className="max-w-xl">
             <h2 className="font-extrabold text-amber-50 text-2xl">
               {"Let's Connect"}
             </h2>
 
             {/* Description */}
             <p className="mt-4 leading-6 text-gray-400">
-              Have a project in mind, a question, or just want to say hello? My
-              inbox is always open.
+              Chat did I cook? Or does my music need more aura? My inbox is
+              always open for anything from project ideas to goofy ahh questions
+              so feel free to let me know.
             </p>
           </div>
 
           {/* Email Button */}
-          <div className="mt-8">
+          <div className="mt-8 shrink-0">
             <Link
               href={`mailto:${userEmail}`}
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-black bg-slate-200 hover:bg-slate-300 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
