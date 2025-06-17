@@ -62,11 +62,11 @@ export const albums: Album[] = [
     description:
       "A collection of three gentle waltzes, inspired by the fleeting and whimsical memories of childhood. They are intended as a gentle companion for solitude in the quiet hours of the day or night.",
     links: {
-      spotify: "https://open.spotify.com/album/2a2xsWfDCamRlsy5i8kTZ7",
+      spotify: "https://open.spotify.com/album/28giKluR6IE92eRdGAEYGm",
       youtube:
-        "https://www.youtube.com/playlist?list=OLAK5uy_m3F5W2Qzyu11_G1_UZuziQTBSJDjgx5OQ",
+        "https://www.youtube.com/playlist?list=OLAK5uy_nPrm2F2HTXIgR9cBa_kIYVQwzYdV9cCXI",
       appleMusic:
-        "https://music.apple.com/us/album/thoughtdrifts-single/1763280872",
+        "https://music.apple.com/us/album/waltzes-for-quiet-hours-single/1819835353",
     },
   },
   {
@@ -101,11 +101,10 @@ export const singles: Piece[] = [
     artwork: stargazeArt,
     audioSrc: null,
     links: {
-      spotify: "https://open.spotify.com/album/2a2xsWfDCamRlsy5i8kTZ7",
+      spotify: "https://open.spotify.com/track/2PCXiLCXsc2H6E8BmjfZqN",
       youtube:
-        "https://www.youtube.com/playlist?list=OLAK5uy_m3F5W2Qzyu11_G1_UZuziQTBSJDjgx5OQ",
-      appleMusic:
-        "https://music.apple.com/us/album/thoughtdrifts-single/1763280872",
+        "https://www.youtube.com/watch?v=pByXPSO9Evw&list=OLAK5uy_mkCtsJtfYhi2l2e0wPfe1KVG_AnksKy7E",
+      appleMusic: "https://music.apple.com/us/album/stargaze-single/1818750190",
     },
   },
 ];
