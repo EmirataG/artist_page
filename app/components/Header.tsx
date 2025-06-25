@@ -1,4 +1,4 @@
-import { FaSpotify, FaYoutube, FaApple } from "react-icons/fa";
+import { FaSpotify, FaYoutube, FaApple, FaInstagram } from "react-icons/fa";
 
 import { bio } from "@/data";
 
@@ -24,6 +24,10 @@ const Header = () => {
         <LinkIcon
           icon={FaYoutube}
           href="https://www.youtube.com/channel/UCa6VqM6tg0ydyMpnO1zr7DA"
+        />
+        <LinkIcon
+          icon={FaInstagram}
+          href="https://www.instagram.com/emirbachtyar_composer"
         />
       </div>
     </header>
