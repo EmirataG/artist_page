@@ -21,10 +21,7 @@ const Header = () => {
           icon={FaApple}
           href="https://music.apple.com/us/artist/emir-bachtyar/1763280269"
         />
-        <LinkIcon
-          icon={FaYoutube}
-          href="https://www.youtube.com/channel/UCa6VqM6tg0ydyMpnO1zr7DA"
-        />
+        <LinkIcon icon={FaYoutube} href="www.youtube.com/@EmirBachtyar" />
         <LinkIcon
           icon={FaInstagram}
           href="https://www.instagram.com/emirbachtyar_composer"
